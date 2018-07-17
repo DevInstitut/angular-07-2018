@@ -1121,21 +1121,20 @@ Multiplication(10,20) = 200
 </ul>
 </li>
 </ul>
-<pre><code>resultat1 ## 30
-resultat2 ## 30
-resultat3 ## 200
-Somme [ nb1 ## 20 nb2 ##  40 ] ## 60
-Multiplication [ nb1 ## 10 nb2 ##  20 ] ## 200
-Soustraction [ nb1 ## 15 nb2 ##  5 ] ## 10
+<pre><code>resultat1 = 30
+resultat2 = 30
+resultat3 = 200
+Somme(0,40) = 60
+Multiplication(10,20) = 200
+Soustraction(15,5) = 10
 </code></pre><h2 id="tp-02---tableaux">TP 02 - Tableaux</h2>
 <ul>
 <li>Cr&#xE9;er un fichier 02.tableaux.js.</li>
 </ul>
-<pre><code class="lang-js">/rappels-es5
-    <span class="hljs-number">01.</span><span class="hljs-function"><span class="hljs-keyword">function</span>.<span class="hljs-title">js</span>
-    02.<span class="hljs-title">tableau</span>.<span class="hljs-title">js</span>
-</span></code></pre>
-<ul>
+<pre><code>/rappels-es5
+    01.function.js
+    02.tableau.js
+</code></pre><ul>
 <li>Cr&#xE9;er une variable <code>villes</code> qui a comme valeur un tableau des cha&#xEE;nes de caract&#xE8;res suivantes : &apos;nantes&apos;, &apos;paris&apos;, &apos;saint-nazaire&apos;, &apos;angers&apos;, &apos;le mans&apos;.</li>
 </ul>
 <h3 id="foreach">forEach()</h3>
@@ -1161,50 +1160,56 @@ le mans
 <ul>
 <li>A l&apos;aide de la fonction <code>filter()</code>, cr&#xE9;er une variable <code>villesSansTiretSansEspace</code> qui contient un tableau dont les villes n&apos;ont ni tiret, ni espace.</li>
 </ul>
-<pre><code>villesSansTiretSansEspace## [ &apos;nantes&apos;, &apos;paris&apos;, &apos;angers&apos; ]
-----
-
-### Chainer les Fonctions
-
-* A partir du tableau `villes`, construire un tableau dont :
-
-** la derni&#xE8;re lettre du nom est `&apos;s&apos;`
-** les noms des villes sont en majuscules
-
-----
-villesMajusculeSeTerminantParS ## [ &apos;NANTES&apos;, &apos;PARIS&apos;, &apos;ANGERS&apos;, &apos;LE MANS&apos; ]
+<pre><code>villesSansTiretSansEspace = [ &apos;nantes&apos;, &apos;paris&apos;, &apos;angers&apos; ]
+</code></pre><h3 id="chainer-les-fonctions">Chainer les Fonctions</h3>
+<ul>
+<li><p>A partir du tableau <code>villes</code>, construire un tableau dont :</p>
+<ul>
+<li>la derni&#xE8;re lettre du nom est <code>&apos;s&apos;</code></li>
+<li>les noms des villes sont en majuscules</li>
+</ul>
+</li>
+</ul>
+<pre><code>villesMajusculeSeTerminantParS = [ &apos;NANTES&apos;, &apos;PARIS&apos;, &apos;ANGERS&apos;, &apos;LE MANS&apos; ]
 </code></pre><h2 id="tp-03---programmation-orient&#xE9;e-objet">TP 03 - Programmation orient&#xE9;e objet</h2>
 <ul>
 <li>Cr&#xE9;er un fichier <code>03.poo.js</code>.</li>
 </ul>
-<pre><code>/formation-frontend
-    /01-rappels-es5
-        01.function.js
-        02.tableau.js
-        03.poo.js
+<pre><code>/rappels-es5
+    01.function.js
+    02.tableau.js
+    03.poo.js
 </code></pre><h3 id="fonction-constructeur">Fonction constructeur</h3>
 <ul>
-<li><p>Cr&#xE9;er une fonction constructeur <code>Personne</code> qui permet de cr&#xE9;er un objet ayant les caract&#xE9;ristiques suivantes :
-<strong> Un attribut <code>nom</code>.
-</strong> Un attribut <code>prenom</code>.
-<strong> Un attribut <code>pseudo</code>.
-</strong> Une m&#xE9;thode <code>getNomComplet</code> qui retourne une chaine de caract&#xE8;res contenant le nom, le pr&#xE9;nom et le pseudo.</p>
+<li><p>Cr&#xE9;er une fonction constructeur <code>Personne</code> qui permet de cr&#xE9;er un objet ayant les caract&#xE9;ristiques suivantes :</p>
+<ul>
+<li>Un attribut <code>nom</code>.</li>
+<li>Un attribut <code>prenom</code>.</li>
+<li>Un attribut <code>pseudo</code>.</li>
+<li>Une m&#xE9;thode <code>getNomComplet</code> qui retourne une chaine de caract&#xE8;res contenant le nom, le pr&#xE9;nom et le pseudo.</li>
+</ul>
 </li>
-<li><p>Cr&#xE9;er un objet <code>jules</code> en utilisant la fonction constructeur <code>Personne</code> avec :
-<strong> Le pr&#xE9;nom <code>Jules</code>.
-</strong> Le nom <code>LEMAIRE</code>.
-** Le pseudo <code>jules77</code>.</p>
+<li><p>Cr&#xE9;er un objet <code>jules</code> en utilisant la fonction constructeur <code>Personne</code> avec :</p>
+<ul>
+<li>Le pr&#xE9;nom <code>Jules</code>.</li>
+<li>Le nom <code>LEMAIRE</code>.</li>
+<li>Le pseudo <code>jules77</code>.</li>
+</ul>
 </li>
-<li><p>Cr&#xE9;er un objet <code>paul</code> en utilisant la fonction constructeur <code>Personne</code> avec :
-<strong> Le pr&#xE9;nom <code>Paul</code>.
-</strong> Le nom <code>LEMAIRE</code>.
-** Le pseudo <code>paul44</code>.</p>
+<li><p>Cr&#xE9;er un objet <code>paul</code> en utilisant la fonction constructeur <code>Personne</code> avec :</p>
+<ul>
+<li>Le pr&#xE9;nom <code>Paul</code>.</li>
+<li>Le nom <code>LEMAIRE</code>.</li>
+<li>Le pseudo <code>paul44</code>.</li>
+</ul>
 </li>
-<li><p>Afficher dans la console :
-<strong> Le nom de l&apos;objet <code>jules</code>.
-</strong> Le pr&#xE9;nom de l&apos;objet <code>jules</code>.
-<strong> Le pseudo de l&apos;objet <code>jules</code>.
-</strong> Le nom complet de l&apos;objet <code>jules</code>.</p>
+<li><p>Afficher dans la console :</p>
+<ul>
+<li>Le nom de l&apos;objet <code>jules</code>.</li>
+<li>Le pr&#xE9;nom de l&apos;objet <code>jules</code>.</li>
+<li>Le pseudo de l&apos;objet <code>jules</code>.</li>
+<li>Le nom complet de l&apos;objet <code>jules</code>.</li>
+</ul>
 </li>
 <li><p>R&#xE9;p&#xE9;ter l&apos;affichage pr&#xE9;c&#xE9;dent pour l&apos;objet <code>paul</code> (cr&#xE9;er une fonction r&#xE9;utilisable <code>afficherPersonne</code>).</p>
 </li>
@@ -1216,22 +1221,25 @@ villesMajusculeSeTerminantParS ## [ &apos;NANTES&apos;, &apos;PARIS&apos;, &apos
 <li><p>Modifier le pseudo de l&apos;objet <code>jules</code> en <code>jules44</code>.</p>
 </li>
 <li><p>Afficher dans la console :</p>
-</li>
-</ul>
-<p>** Le nom complet de l&apos;objet <code>jules</code>.</p>
 <ul>
-<li>Tester.</li>
+<li>Le nom complet de l&apos;objet <code>jules</code>.</li>
+</ul>
+</li>
+<li><p>Tester.</p>
+</li>
 </ul>
 <h3 id="ajouter-une-propri&#xE9;t&#xE9;-&#xE0;-personne">Ajouter une propri&#xE9;t&#xE9; &#xE0; Personne</h3>
 <ul>
-<li><p>Afficher la propri&#xE9;t&#xE9; <code>age</code> de l&apos;objet <code>jules</code>.
-** V&#xE9;rifier que la valeur est <code>undefined</code>.</p>
+<li><p>Afficher la propri&#xE9;t&#xE9; <code>age</code> de l&apos;objet <code>jules</code>.</p>
+<ul>
+<li>V&#xE9;rifier que la valeur est <code>undefined</code>.</li>
+</ul>
 </li>
 <li><p>Ajouter la propri&#xE9;t&#xE9; <code>age</code> &#xE0; la structure <code>Personne</code> avec la valeur par d&#xE9;faut <code>NON RENSEIGNE</code>.</p>
-</li>
-</ul>
-<p>** Utiliser la propri&#xE9;t&#xE9; <code>prototype</code>.</p>
 <ul>
+<li>Utiliser la propri&#xE9;t&#xE9; <code>prototype</code>.</li>
+</ul>
+</li>
 <li><p>Afficher la propri&#xE9;t&#xE9; <code>age</code> de l&apos;objet <code>jules</code> dans la console.</p>
 </li>
 <li><p>Tester.</p>
@@ -1245,11 +1253,13 @@ villesMajusculeSeTerminantParS ## [ &apos;NANTES&apos;, &apos;PARIS&apos;, &apos
 </ul>
 <h3 id="ajouter-une-m&#xE9;thode-&#xE0;-personne">Ajouter une m&#xE9;thode &#xE0; Personne</h3>
 <ul>
-<li>Ajouter la m&#xE9;thode <code>getInitiales</code> &#xE0; la structure <code>Personne</code> qui retourne une chaine de caract&#xE8;res compos&#xE9;e de la premi&#xE8;re lettre du pr&#xE9;nom et de la premi&#xE8;re lettre du nom.
-** En javascript, pour r&#xE9;cup&#xE9;rer un caract&#xE8;re d&apos;une chaine de caract&#xE8;res, utiliser la fonction <code>charAt</code>. Exemple :</li>
+<li>Ajouter la m&#xE9;thode <code>getInitiales</code> &#xE0; la structure <code>Personne</code> qui retourne une chaine de caract&#xE8;res compos&#xE9;e de la premi&#xE8;re lettre du pr&#xE9;nom et de la premi&#xE8;re lettre du nom.<ul>
+<li>En javascript, pour r&#xE9;cup&#xE9;rer un caract&#xE8;re d&apos;une chaine de caract&#xE8;res, utiliser la fonction <code>charAt</code>. Exemple :</li>
 </ul>
-<pre><code class="lang-js">&quot;Jules&quot;.charAt(0) ## &quot;J&quot;
-&quot;Jules&quot;.charAt(3) ## &quot;e&quot;
+</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-string">&quot;Jules&quot;</span>.charAt(<span class="hljs-number">0</span>) == <span class="hljs-string">&quot;J&quot;</span>
+<span class="hljs-string">&quot;Jules&quot;</span>.charAt(<span class="hljs-number">3</span>) == <span class="hljs-string">&quot;e&quot;</span>
 </code></pre>
 <ul>
 <li><p>Afficher dans la console les initiales de l&apos;objet <code>jules</code>.</p>
@@ -1259,11 +1269,13 @@ villesMajusculeSeTerminantParS ## [ &apos;NANTES&apos;, &apos;PARIS&apos;, &apos
 </ul>
 <h3 id="objet-sans-fonction-constructeur">Objet sans fonction constructeur</h3>
 <ul>
-<li><p>Cr&#xE9;er un objet <code>robert</code> sans fonction constructeur avec :
-<strong> L&apos;attribut <code>prenom</code> qui vaut <code>Robert</code>.
-</strong> L&apos;attribut <code>nom</code> qui vaut <code>LEPREFET</code>.
-<strong> L&apos;attribut <code>pseudo</code> qui vaut <code>robert77</code>.
-</strong> La m&#xE9;thode <code>getNomComplet</code> qui retourne une chaine de caract&#xE8;res contenant le nom, le pr&#xE9;nom et le pseudo.</p>
+<li><p>Cr&#xE9;er un objet <code>robert</code> sans fonction constructeur avec :</p>
+<ul>
+<li>L&apos;attribut <code>prenom</code> qui vaut <code>Robert</code>.</li>
+<li>L&apos;attribut <code>nom</code> qui vaut <code>LEPREFET</code>.</li>
+<li>L&apos;attribut <code>pseudo</code> qui vaut <code>robert77</code>.</li>
+<li>La m&#xE9;thode <code>getNomComplet</code> qui retourne une chaine de caract&#xE8;res contenant le nom, le pr&#xE9;nom et le pseudo.</li>
+</ul>
 </li>
 <li><p>R&#xE9;utiliser la fonction <code>afficherPersonne</code> pour afficher les informations de l&apos;objet <code>robert</code>.</p>
 </li>
@@ -1272,12 +1284,16 @@ villesMajusculeSeTerminantParS ## [ &apos;NANTES&apos;, &apos;PARIS&apos;, &apos
 </ul>
 <h3 id="h&#xE9;ritage-via-une-fonction-constructeur">H&#xE9;ritage via une fonction constructeur</h3>
 <ul>
-<li><p>Cr&#xE9;er une fonction constructeur <code>Client</code> qui poss&#xE8;de les m&#xEA;mes caract&#xE9;ristiques que <code>Personne</code> et qui contient en plus :
-<strong> Une propri&#xE9;t&#xE9; <code>numeroClient</code>.
-</strong> Une fonction <code>getInfos</code> qui retourne :
-<strong><em> Le num&#xE9;ro du client.
-</em></strong> Le nom du client.
-<em>*</em> Le prenom du client.</p>
+<li><p>Cr&#xE9;er une fonction constructeur <code>Client</code> qui poss&#xE8;de les m&#xEA;mes caract&#xE9;ristiques que <code>Personne</code> et qui contient en plus :</p>
+<ul>
+<li>Une propri&#xE9;t&#xE9; <code>numeroClient</code>.</li>
+<li>Une fonction <code>getInfos</code> qui retourne :<ul>
+<li>Le num&#xE9;ro du client.</li>
+<li>Le nom du client.</li>
+<li>Le prenom du client.</li>
+</ul>
+</li>
+</ul>
 </li>
 <li><p>Utiliser <code>call</code> avec la fonction <code>Personne</code> (<code>Personne.call(&#x2026;)</code>).</p>
 </li>
@@ -1287,15 +1303,16 @@ villesMajusculeSeTerminantParS ## [ &apos;NANTES&apos;, &apos;PARIS&apos;, &apos
 <li>La fonction <code>call</code> en javascript permet d&apos;appliquer une fonction &#xE0; un objet donnn&#xE9;.</li>
 </ul>
 <p>Par exemple :</p>
-<pre><code>
-var robert ## { nom: &apos;Robert&apos;};
+<pre><code class="lang-js">
+<span class="hljs-keyword">var</span> robert = { nom: <span class="hljs-string">&apos;Robert&apos;</span>};
 
-function afficherNom(texte) {
-    console.log(&apos;Nom&apos;, this.nom, texte); // this ## robert
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">afficherNom</span>(<span class="hljs-params">texte</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Nom&apos;</span>, <span class="hljs-keyword">this</span>.nom, texte); <span class="hljs-comment">// this = robert</span>
 }
 
-afficherNom.call(robert, &apos;untexte&apos;);
-</code></pre><ul>
+afficherNom.call(robert, <span class="hljs-string">&apos;untexte&apos;</span>);
+</code></pre>
+<ul>
 <li><p>Cr&#xE9;er un objet <code>steve</code> &#xE0; partir de la structure <code>Client</code> avec :</p>
 <ul>
 <li>L&apos;attribut <code>prenom</code> qui vaut <code>Steve</code>.</li>
@@ -1354,7 +1371,7 @@ afficherNom.call(robert, &apos;untexte&apos;);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"TP #1 - Rappels JavaScript","level":"1.3.62","depth":2,"previous":{"title":"Géolocalisation","level":"1.3.61","depth":2,"path":"02-rappels-js/62-geolocalisation.md","ref":"02-rappels-js/62-geolocalisation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["auto-summary","github-edit"],"ignores":["_book","node_modules","sources"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"github-edit":{"repo":"DevInstitut/angular-07-2018","branch":"master"},"auto-summary":{},"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation Angular","gitbook":"*"},"file":{"path":"02-rappels-js/99-tp.md","mtime":"2018-07-17T12:19:34.688Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-17T12:24:10.856Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"TP #1 - Rappels JavaScript","level":"1.3.62","depth":2,"previous":{"title":"Géolocalisation","level":"1.3.61","depth":2,"path":"02-rappels-js/62-geolocalisation.md","ref":"02-rappels-js/62-geolocalisation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["auto-summary","github-edit"],"ignores":["_book","node_modules","sources"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"github-edit":{"repo":"DevInstitut/angular-07-2018","branch":"master"},"auto-summary":{},"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation Angular","gitbook":"*"},"file":{"path":"02-rappels-js/99-tp.md","mtime":"2018-07-17T14:06:37.729Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-17T14:09:47.105Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
