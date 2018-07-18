@@ -1,4 +1,4 @@
-* [Introduction](01-introduction/README.md)
+* [Agenda](01-introduction/README.md)
 * [Rappels JavaScript (ES 5)](02-rappels-js/README.md)
   * [Langage JavaScript](02-rappels-js/01-langage-javascript.md)
   * [Syntaxe de base](02-rappels-js/02-syntaxe-de-base.md)
