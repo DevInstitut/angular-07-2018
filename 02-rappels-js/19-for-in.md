@@ -16,7 +16,7 @@ obj.name = "toto";
 obj.surname = "titi";
 
 var i = 0;
-for( i in objTab) {
+for( i in obj) {
   alert('obj[' + i + '] = ' + obj[i]);
 }
 ```
