@@ -84,7 +84,7 @@
     * [Variables](03-node/02-npm/08-variables.md)
     * [Propriété main](03-node/02-npm/09-propriete-main.md)
   * [TP #2 - NPM & Node](03-node/03-tp/README.md)
-* [Formation ESNEXT](04-esnext/README.md)
+* [ESNEXT](04-esnext/README.md)
   * [ECMAScript 2015](04-esnext/01-ES2015/README.md)
     * [`let`](04-esnext/01-ES2015/01-let.md)
     * [const](04-esnext/01-ES2015/02-const.md)
