@@ -171,7 +171,7 @@ Vérifier l'affichage :
 Hugues
 ```
 
-* Compléter le fichier `service.js` en suivant les instructions en commentaires.
+* Compléter le fichier `service.js` pour récupérer les données depuis une Web API.
 
 
 ### Menu Lister
