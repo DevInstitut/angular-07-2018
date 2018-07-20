@@ -109,7 +109,7 @@ Reconnaissez-vous le _Module Pattern_ ?
 ```ts
 class Meteo {
 
-    ville:string
+    ville?:string
 
 }
 ```
