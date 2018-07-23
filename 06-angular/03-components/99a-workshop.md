@@ -1,113 +1,53 @@
-# TP #5.2 - Composants 
+# TP #5.2.2 - Composants
 
-## DemoComponent
+## ChoixStagiaireComponent
 
-Avant de nous lancer dans la création de l'application, nous allons créer unitairement les composants.
-
-Ces composants vont être regroupées dans un composant `DemoComponent` qui montre un exemple d'utilisation de tous les composants de l'application.
+* Générer un composant `ChoixStagiaire`.
 
 ```
-ng g component demo
+ng g component ChoixStagiaire
 ```
 
 * Modifier le contenu du composant App (`app.component.html`) comme suit :
 
 ```html
-<app-demo></app-demo>
+<app-choix-stagiaire></app-choix-stagiaire>
 ```
 
-* Modifier le fichier `demo.component.html` comme suit :
-
-```html
-<h1>Page de démonstration des composants de l'application</h1>
-```
-
-* Tester l'application et vérifier l'affichage de l'application.
+* Tester l'application et vérifier l'affichage du composant.
 
 ## BandeauComponent
 
 * Créer un composant `BandeauComponent` qui affiche un titre et une description.
 
-![](../images/BandeauComponent.png)
+![](../images/evalme/accueil.02.png)
 
-* Modifier la page de démo pour vérifier le fonctionnement du composant `BandeauComponent`.
-
-
-## AvisComponent
-
-* Créer un composant `AvisComponent` qui affiche 2 boutons.
-
-![](../images/AvisComponent.png)
-
-* Intégrer ce composant à la page de démonstration (précédé par le titre *AvisComponent*).
-
-* Vérifier l'affichage des deux boutons.
-
-* Créer un fichier `src/app/models.ts` qui va héberger toutes les structures d'encapsulation des données.
-
-* Ajouter au fichier `src/app/models.ts` une énumération `Avis` avec deux valeurs possibles : `AIMER` et `DETESTER`.
-
-* Modifier le composant `AvisComponent` pour qu'il émette un événement `avis` avec la valeur `Avis.AIMER` ou `Avis.DETESTER` en fonction du bouton cliqué.
-
-* Modifier la page de démo pour vérifier le fonctionnement du composant `AvisComponent`.
-
-![](../images/DemoAvisComponent.png)
+* Modifier la page `ChoixStagiaire` pour intégrer le composant `BandeauComponent`.
 
 
-## CollegueComponent
+## StagiaireComponent
 
-* Créer un composant `CollegueComponent` le score d'un collègue et offre la possibilité d'émettre un avis.
+* Créer un composant `StagiaireComponent`.
 
-![](../images/CollegueComponent.png)
+![](../images/evalme/accueil.03.png)
 
-* Ce composant prend en entrée un objet de type `Collegue`.
-Ajouter au fichier `src/app/models.ts` une classe `Collegue` avec les informations nécessaires indispensable à cette page.
+* Ce composant prend en entrée un objet de type `Stagiaire` (`@Input`)
+    * Ajouter un fichier `src/app/domains.ts`.
+    * Ajouter y une classe `Stagiaire` avec les informations d'un stagiaire.
+    
+* Un clic sur le bouton `Choisir` affiche dans la console le nom et le prénom du stagiaire.
 
-* Compléter la page de démonstration pour vérifier le fonctionnement du composant `CollegueComponent`. Créer un objet `Collegue` fictif pour l'affichage.
+## ListeStagiairesComponent
 
-## ListeColleguesComponent
+* Créer un composant `ListeStagiairesComponent` qui, à partir d'une liste d'objets stagiaires, produit l'affichage suivant :
 
-* Créer un composant `ListeColleguesComponent` qui, à partir d'une liste d'objets collègues, produit l'affichage suivant :
+![](../images/evalme/accueil.04.png)
 
-![](../images/ListeColleguesComponent.png)
+* Ce composant a un champ de type tableau d'objets Stagiaires.
 
-* Ce composant a en entrée un tableau d'objets Collegues.
+* Modifier la page `ChoixStagiaire` pour intégrer le composant `ListeStagiairesComponent`.
 
-* Modifier la page de démo pour vérifier le fonctionnement du composant `ListeColleguesComponent`.
-Créer une liste de collègues fictives.
-
-
-## HistoriqueVotesComponent
-
-* Créer un composant `HistoriqueVotesComponent` qui affiche les derniers votes.
-
-![](../images/HistoriqueVotesComponent.png)
-
-* Créer dans le fichier `src/app/models.ts`, une structure `Vote` permettant de représenter le vote d'un collègue.
-
-* Le bouton `Supprimer` supprime le vote concerné.
-* Compléter la page de démonstration pour vérifier le fonctionnement du composant `HistoriqueVotesComponent`.
-Créer un tableau d'objets `Vote` fictifs pour l'affichage.
-
-## AccueilComponent
-
-* Créer un composant `AccueilComponent` qui a le rendu suivant :
-
-
-![](../images/AccueilComponent.png)
-
-* Modifier le composant `AppComponent` pour qu'il affiche désormais le composant `AccueilComponent`.
-
-* A ce stade, `AccueilComponent` fonctionne avec des données fictives.
-
-
-## Limitation sur les scores
-
-Mettre en oeuvre le comportement suivant :
-
-* Si le score est <= -1000, alors le bouton `Je déteste` se désactive.
-
-* Si le score est >= 1000 alors le bouton `J'aime` se désactive
+![](../images/evalme/accueil.01.png)
 
 
 
