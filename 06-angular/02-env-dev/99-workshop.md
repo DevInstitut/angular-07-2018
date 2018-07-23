@@ -144,8 +144,8 @@ Pour réaliser les composants graphiques, nous allons utilisé [Angular Bootstra
 * Installer MDB
 
 ```
- npm install angular-bootstrap-md chart.js@2.5.0 font-awesome hammerjs rxjs-compat --save
-```
+ npm install -–save chart.js@2.5.0 @types/chart.js @types/chart.js font-awesome hammerjs angular5-csv
+ ```
 
 * Compléter le fichier `.angular.json` en ajoutant la propriété `styleext` avec la valeur `scss`.
 
