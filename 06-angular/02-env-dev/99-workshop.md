@@ -1,6 +1,6 @@
-# Top Collègues #1
+# TP #5.1 - Projet 
 
-L'objectif de ce TP est de réaliser une application qui permet de classer des collègues.
+L'objectif de ce TP est de réaliser une application de l'écosystème EvalMe basée sur Angular.
 
 ## Initialisation du projet
 

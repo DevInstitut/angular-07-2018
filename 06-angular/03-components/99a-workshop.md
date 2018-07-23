@@ -1,4 +1,4 @@
-# Top Collègues #2
+# TP #5.2 - Composants 
 
 ## DemoComponent
 
