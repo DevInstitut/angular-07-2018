@@ -151,3 +151,7 @@
     * [@Output](06-angular/03-components/08-output.md)
     * [TP #5.2.1 - Composants](06-angular/03-components/99-travaux-pratiques.md)
     * [TP #5.2.2 - Composants](06-angular/03-components/99a-workshop.md)
+  * [Service](06-angular/04-services/README.md)
+    * [Créer un service](06-angular/04-services/01-creer-service.md)
+    * [Client HTTP](06-angular/04-services/02-http-client.md)
+    * [TP #5.3 - Services](06-angular/04-services/99-workshop.md)
