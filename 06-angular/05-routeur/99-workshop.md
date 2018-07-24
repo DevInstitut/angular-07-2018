@@ -2,7 +2,7 @@
 
 ## Examens
 
-### `/` 
+### `/choix-stagiaires` 
 
 ![](../images/evalme/accueil.01.png)
 
@@ -24,7 +24,7 @@ Le lien `Choisir un autre` permet de revenir à la page de choix du stagiaire.
 
 ## Sondages
 
-### `/` 
+### `/choix-stagiaires` 
 
 ![](../images/evalme/accueil.01.png)
 
@@ -46,7 +46,7 @@ Le lien `Choisir un autre` permet de revenir à la page de choix du stagiaire.
 
 ## Duels
 
-### `/` 
+### `/choix-stagiaires` 
 
 ![](../images/evalme/accueil.01.png)
 
@@ -68,7 +68,7 @@ Le lien `Choisir un autre` permet de revenir à la page de choix du stagiaire.
 
 ## Concours
 
-### `/` 
+### `/choix-stagiaires` 
 
 ![](../images/evalme/accueil.01.png)
 
