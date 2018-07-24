@@ -6,7 +6,7 @@
 
 ![](../images/evalme/accueil.01.png)
 
-### `/{id_stagiaire}/examens/`
+### `/{id_stagiaire}/examens`
 
 ![](../images/evalme/examen.01.png)
 
