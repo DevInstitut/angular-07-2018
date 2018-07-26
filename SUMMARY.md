@@ -192,4 +192,4 @@
     * [Tester un composant paramétrable](06-angular/11-tests/07-tester-composant-input-output.md)
     * [Tester l'application (E2E)](06-angular/11-tests/08-tester-application.md)
     * [Tester sans interface graphique](06-angular/11-tests/09-tester-sans-ui.md)
-    * [Top Collègues #9](06-angular/11-tests/99-workshop.md)
+    * [TP #5.8 - Tests](06-angular/11-tests/99-workshop.md)
