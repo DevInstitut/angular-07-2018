@@ -2,6 +2,6 @@
 
 ## Filtre par pseudo
 
-* Implémenter la possibilité de pouvoir filtrer par libellé. La saisie
+* Implémenter la possibilité de pouvoir filtrer par libellé.
 
 ![](../images/evalme/pipe.png)

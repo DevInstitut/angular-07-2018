@@ -18,7 +18,7 @@ Les contraintes :
 
 Gérer les erreurs du serveur.
 
-Dans le cas où le stagiaire a bien été mis à jour côté serveur, rediriger l'utilisateur ve.
+Dans le cas où le stagiaire a bien été mis à jour côté serveur, rediriger l'utilisateur vers la page principale de votre application.
 
 ## Réponses aux questions
 
