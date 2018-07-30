@@ -1,17 +1,10 @@
 ## Subject
 
 ```js
-
-// Angular 5
-// import {Observable} from 'rxjs/Observable';
-// import 'rxjs/add/observable/interval';
-// import {Subject} from "rxjs/Subject";
-
-// Angular 6
 import {Observable, Subject, interval} from 'rxjs';
 
 // Soit une source
-var source = Observable.interval(1000);
+var source = interval(1000);
 
 // Un Subject est à la fois un Observable et un Observateur
 

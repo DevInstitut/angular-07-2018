@@ -41,31 +41,18 @@ observable$.subscribe(
 * Depuis des valeurs :
 
 ```ts
-// Angular 5
-// import {Observable} from 'rxjs/Observable'
+import {Observable, of} from 'rxjs'
 
-// Angular 6
-import {Observable} from 'rxjs'
-
-// import de l'opérateur Of
-import 'rxjs/add/observable/of';
-
-const obs$ = Observable.of('foo', 'bar');
+const obs$ = of('foo', 'bar');
 ```
 
 * Dépuis un tableau
 
 ```ts
-// Angular 5
-// import {Observable} from 'rxjs/Observable'
-// import 'rxjs/add/observable/from';
-
-// Angular 6
-import {Observable} from 'rxjs'
-import { from } from 'rxjs';
+import {Observable, from} from 'rxjs';
 
 
-const obs$ = Observable.from([1,2,3]);
+const obs$ = from([1,2,3]);
 
 ```
 
@@ -73,18 +60,9 @@ const obs$ = Observable.from([1,2,3]);
 * Depuis un événement
 
 ```ts
-// Angular 5
-// import {Observable} from 'rxjs/Observable';
-// import 'rxjs/add/observable/fromEvent';
+import { Observable, fromEvent} from 'rxjs';
 
-// Angular 6
-import { Observable } from 'rxjs'
-import { fromEvent } from 'rxjs';
-
-const obs$ = Observable.fromEvent(document.querySelector('button'), 'click');
-
-// Depuis une promesse
-Observable.fromPromise(fetch('/users'));
+const obs$ = fromEvent(document.querySelector('button'), 'click');
 
 ```
 
@@ -93,15 +71,9 @@ Observable.fromPromise(fetch('/users'));
 
 
 ```ts
-// Angular 5
-// import {Observable} from 'rxjs/Observable';
-// import 'rxjs/add/observable/fromPromise';
+import { Observable, from } from 'rxjs'
 
-// Angular 6
-import { Observable } from 'rxjs'
-import { from } from 'rxjs';
-
-const obs$ = Observable.from(fetch('/users'));
+const obs$ = from(fetch('/users'));
 
 ```
 
