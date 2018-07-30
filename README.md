@@ -14,7 +14,7 @@ C'est pour cela, que certains travaux pratiques font référence à Spring.
 
 > Il s'agit ici d'un support de présentation, le contenu a été écrit dans l'objectif d'être animé par un formateur.
 
-Ce contenu est habituellement déroulé en 6 jours de formation.
+Ce contenu est habituellement déroulé en 9 jours de formation.
 
 ## Un mot sur l'auteur
 
